@@ -1,17 +1,23 @@
 <h1 align="center">IEEE-CIS Fraud Detection Dashboard</h1>
 
-[![Deploy GitHub Pages](https://github.com/capigit/IEEE-CIS-Fraud-Detection/actions/workflows/deploy-gh-pages.yml/badge.svg)](https://github.com/capigit/IEEE-CIS-Fraud-Detection/actions/workflows/deploy-gh-pages.yml)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-167a4a)](https://capigit.github.io/IEEE-CIS-Fraud-Detection/)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3157b7)](https://www.python.org/)
-[![React + Vite](https://img.shields.io/badge/React%20%2B%20Vite-dashboard-087f8c)](https://vitejs.dev/)
+<p align="center">
+  <a href="https://github.com/capigit/IEEE-CIS-Fraud-Detection/actions/workflows/deploy-gh-pages.yml"><img src="https://github.com/capigit/IEEE-CIS-Fraud-Detection/actions/workflows/deploy-gh-pages.yml/badge.svg" alt="Deploy GitHub Pages"></a>
+  <a href="https://capigit.github.io/IEEE-CIS-Fraud-Detection/"><img src="https://img.shields.io/badge/GitHub%20Pages-live-167a4a" alt="GitHub Pages"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.11%2B-3157b7" alt="Python 3.11+"></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/React%20%2B%20Vite-dashboard-087f8c" alt="React + Vite"></a>
+</p>
 
-Dashboard statique et pipeline d'analyse pour explorer le dataset
-**IEEE-CIS Fraud Detection**. Le projet transforme les fichiers Kaggle locaux en
-agregats JSON publics, puis les restitue dans une interface React partageable
-sur GitHub Pages.
+<p align="center">
+  Dashboard statique et pipeline d'analyse pour explorer le dataset
+  <strong>IEEE-CIS Fraud Detection</strong>.<br>
+  Le projet transforme les fichiers Kaggle locaux en agregats JSON publics,
+  puis les restitue dans une interface React partageable sur GitHub Pages.
+</p>
 
-**Dashboard en ligne :**
-[capigit.github.io/IEEE-CIS-Fraud-Detection](https://capigit.github.io/IEEE-CIS-Fraud-Detection/)
+<p align="center">
+  <strong>Dashboard en ligne :</strong>
+  <a href="https://capigit.github.io/IEEE-CIS-Fraud-Detection/">capigit.github.io/IEEE-CIS-Fraud-Detection</a>
+</p>
 
 <p align="center">
   <img src="global.png" alt="Apercu du dashboard IEEE-CIS Fraud Detection" width="920">
