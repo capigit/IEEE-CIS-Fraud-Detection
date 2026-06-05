@@ -1,0 +1,32 @@
+# Raw Kaggle data
+*.csv
+data/raw/
+
+# Generated analysis outputs
+data/processed/
+data/dashboard/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.log
+*.tsbuildinfo
+
+# Node
+node_modules/
+web/dist/
+web/.vite/
+web/vite.config.js
+web/vite.config.d.ts
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local Git metadata for this sandbox
+.gitrepo/

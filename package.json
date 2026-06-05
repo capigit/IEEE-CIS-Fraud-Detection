@@ -1,0 +1,14 @@
+{
+  "name": "ieee-fraud-detection-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "data:validate": "python -m fraud_analysis validate --raw-dir .",
+    "data:prepare": "python -m fraud_analysis prepare-processed --raw-dir . --out-dir data/processed",
+    "data:export": "python -m fraud_analysis export-dashboard --raw-dir . --out-dir data/dashboard --publish-dir web/public/data",
+    "model:train": "python -m fraud_analysis train-model --raw-dir . --out-dir data/dashboard --publish-dir web/public/data",
+    "web:dev": "npm --prefix web run dev",
+    "web:build": "npm --prefix web run build",
+    "web:preview": "npm --prefix web run preview"
+  }
+}

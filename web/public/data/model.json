@@ -1,0 +1,551 @@
+{
+  "status": "trained",
+  "model_name": "time_split_logistic_regression",
+  "validation": {
+    "strategy": "last_20_percent_by_TransactionDT",
+    "rows_train": 472432,
+    "rows_valid": 118108,
+    "fraud_rate_valid": 0.034409
+  },
+  "metrics": {
+    "roc_auc": 0.800198,
+    "average_precision": 0.191461,
+    "best_threshold": {
+      "threshold": 0.775887,
+      "precision": 0.23286,
+      "recall": 0.330955,
+      "f1": 0.273374
+    },
+    "confusion_matrix": {
+      "labels": [
+        "not_fraud",
+        "fraud"
+      ],
+      "matrix": [
+        [
+          109612,
+          4432
+        ],
+        [
+          2719,
+          1345
+        ]
+      ]
+    },
+    "threshold_scenarios": [
+      {
+        "threshold": 0.05,
+        "precision": 0.03549,
+        "recall": 0.989419,
+        "f1": 0.068522,
+        "true_negative": 4765,
+        "false_positive": 109279,
+        "false_negative": 43,
+        "true_positive": 4021,
+        "flagged_count": 113300,
+        "flagged_rate": 0.959291
+      },
+      {
+        "threshold": 0.1,
+        "precision": 0.039669,
+        "recall": 0.973671,
+        "f1": 0.076232,
+        "true_negative": 18251,
+        "false_positive": 95793,
+        "false_negative": 107,
+        "true_positive": 3957,
+        "flagged_count": 99750,
+        "flagged_rate": 0.844566
+      },
+      {
+        "threshold": 0.15,
+        "precision": 0.044643,
+        "recall": 0.95251,
+        "f1": 0.085289,
+        "true_negative": 31205,
+        "false_positive": 82839,
+        "false_negative": 193,
+        "true_positive": 3871,
+        "flagged_count": 86710,
+        "flagged_rate": 0.734159
+      },
+      {
+        "threshold": 0.2,
+        "precision": 0.047972,
+        "recall": 0.929626,
+        "f1": 0.091235,
+        "true_negative": 39067,
+        "false_positive": 74977,
+        "false_negative": 286,
+        "true_positive": 3778,
+        "flagged_count": 78755,
+        "flagged_rate": 0.666805
+      },
+      {
+        "threshold": 0.25,
+        "precision": 0.051624,
+        "recall": 0.917323,
+        "f1": 0.097746,
+        "true_negative": 45557,
+        "false_positive": 68487,
+        "false_negative": 336,
+        "true_positive": 3728,
+        "flagged_count": 72215,
+        "flagged_rate": 0.611432
+      },
+      {
+        "threshold": 0.3,
+        "precision": 0.056272,
+        "recall": 0.897146,
+        "f1": 0.105901,
+        "true_negative": 52897,
+        "false_positive": 61147,
+        "false_negative": 418,
+        "true_positive": 3646,
+        "flagged_count": 64793,
+        "flagged_rate": 0.548591
+      },
+      {
+        "threshold": 0.35,
+        "precision": 0.0617,
+        "recall": 0.862205,
+        "f1": 0.115159,
+        "true_negative": 60757,
+        "false_positive": 53287,
+        "false_negative": 560,
+        "true_positive": 3504,
+        "flagged_count": 56791,
+        "flagged_rate": 0.48084
+      },
+      {
+        "threshold": 0.4,
+        "precision": 0.069439,
+        "recall": 0.822589,
+        "f1": 0.128067,
+        "true_negative": 69244,
+        "false_positive": 44800,
+        "false_negative": 721,
+        "true_positive": 3343,
+        "flagged_count": 48143,
+        "flagged_rate": 0.407618
+      },
+      {
+        "threshold": 0.45,
+        "precision": 0.078597,
+        "recall": 0.773376,
+        "f1": 0.142692,
+        "true_negative": 77198,
+        "false_positive": 36846,
+        "false_negative": 921,
+        "true_positive": 3143,
+        "flagged_count": 39989,
+        "flagged_rate": 0.33858
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.088814,
+        "recall": 0.719734,
+        "f1": 0.158117,
+        "true_negative": 84035,
+        "false_positive": 30009,
+        "false_negative": 1139,
+        "true_positive": 2925,
+        "flagged_count": 32934,
+        "flagged_rate": 0.278846
+      },
+      {
+        "threshold": 0.55,
+        "precision": 0.101045,
+        "recall": 0.661171,
+        "f1": 0.1753,
+        "true_negative": 90139,
+        "false_positive": 23905,
+        "false_negative": 1377,
+        "true_positive": 2687,
+        "flagged_count": 26592,
+        "flagged_rate": 0.22515
+      },
+      {
+        "threshold": 0.6,
+        "precision": 0.116365,
+        "recall": 0.592274,
+        "f1": 0.194513,
+        "true_negative": 95766,
+        "false_positive": 18278,
+        "false_negative": 1657,
+        "true_positive": 2407,
+        "flagged_count": 20685,
+        "flagged_rate": 0.175136
+      },
+      {
+        "threshold": 0.65,
+        "precision": 0.13075,
+        "recall": 0.537156,
+        "f1": 0.210308,
+        "true_negative": 99531,
+        "false_positive": 14513,
+        "false_negative": 1881,
+        "true_positive": 2183,
+        "flagged_count": 16696,
+        "flagged_rate": 0.141362
+      },
+      {
+        "threshold": 0.7,
+        "precision": 0.143684,
+        "recall": 0.48253,
+        "f1": 0.221432,
+        "true_negative": 102357,
+        "false_positive": 11687,
+        "false_negative": 2103,
+        "true_positive": 1961,
+        "flagged_count": 13648,
+        "flagged_rate": 0.115555
+      },
+      {
+        "threshold": 0.75,
+        "precision": 0.187213,
+        "recall": 0.401329,
+        "f1": 0.255322,
+        "true_negative": 106963,
+        "false_positive": 7081,
+        "false_negative": 2433,
+        "true_positive": 1631,
+        "flagged_count": 8712,
+        "flagged_rate": 0.073763
+      },
+      {
+        "threshold": 0.776,
+        "precision": 0.232808,
+        "recall": 0.330709,
+        "f1": 0.273254,
+        "true_negative": 109615,
+        "false_positive": 4429,
+        "false_negative": 2720,
+        "true_positive": 1344,
+        "flagged_count": 5773,
+        "flagged_rate": 0.048879
+      },
+      {
+        "threshold": 0.8,
+        "precision": 0.233091,
+        "recall": 0.260335,
+        "f1": 0.245961,
+        "true_negative": 110563,
+        "false_positive": 3481,
+        "false_negative": 3006,
+        "true_positive": 1058,
+        "flagged_count": 4539,
+        "flagged_rate": 0.038431
+      },
+      {
+        "threshold": 0.85,
+        "precision": 0.253726,
+        "recall": 0.188484,
+        "f1": 0.216293,
+        "true_negative": 111791,
+        "false_positive": 2253,
+        "false_negative": 3298,
+        "true_positive": 766,
+        "flagged_count": 3019,
+        "flagged_rate": 0.025561
+      },
+      {
+        "threshold": 0.9,
+        "precision": 0.390443,
+        "recall": 0.082431,
+        "f1": 0.136124,
+        "true_negative": 113521,
+        "false_positive": 523,
+        "false_negative": 3729,
+        "true_positive": 335,
+        "flagged_count": 858,
+        "flagged_rate": 0.007265
+      },
+      {
+        "threshold": 0.95,
+        "precision": 0.475138,
+        "recall": 0.042323,
+        "f1": 0.077723,
+        "true_negative": 113854,
+        "false_positive": 190,
+        "false_negative": 3892,
+        "true_positive": 172,
+        "flagged_count": 362,
+        "flagged_rate": 0.003065
+      }
+    ]
+  },
+  "features": {
+    "numeric": [
+      "TransactionAmt",
+      "dist1",
+      "dist2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "categorical": [
+      "ProductCD",
+      "card4",
+      "card6",
+      "P_emaildomain",
+      "R_emaildomain",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9"
+    ],
+    "importance": {
+      "encoded_top": [
+        {
+          "feature": "num__C14",
+          "base_feature": "C14",
+          "coefficient": -8.628523,
+          "importance": 8.628523,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "num__C11",
+          "base_feature": "C11",
+          "coefficient": 6.37551,
+          "importance": 6.37551,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_protonmail.com",
+          "base_feature": "R_emaildomain",
+          "coefficient": 5.250067,
+          "importance": 5.250067,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "num__C4",
+          "base_feature": "C4",
+          "coefficient": 3.929356,
+          "importance": 3.929356,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_mail.com",
+          "base_feature": "R_emaildomain",
+          "coefficient": 3.386575,
+          "importance": 3.386575,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_earthlink.net",
+          "base_feature": "R_emaildomain",
+          "coefficient": 3.20413,
+          "importance": 3.20413,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_bellsouth.net",
+          "base_feature": "R_emaildomain",
+          "coefficient": -2.602007,
+          "importance": 2.602007,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "num__C12",
+          "base_feature": "C12",
+          "coefficient": -2.50108,
+          "importance": 2.50108,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__R_emaildomain_verizon.net",
+          "base_feature": "R_emaildomain",
+          "coefficient": -2.467337,
+          "importance": 2.467337,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__P_emaildomain_aim.com",
+          "base_feature": "P_emaildomain",
+          "coefficient": 2.434697,
+          "importance": 2.434697,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_msn.com",
+          "base_feature": "R_emaildomain",
+          "coefficient": -2.241275,
+          "importance": 2.241275,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__R_emaildomain_icloud.com",
+          "base_feature": "R_emaildomain",
+          "coefficient": 2.177483,
+          "importance": 2.177483,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_att.net",
+          "base_feature": "R_emaildomain",
+          "coefficient": -2.033471,
+          "importance": 2.033471,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__P_emaildomain_mail.com",
+          "base_feature": "P_emaildomain",
+          "coefficient": 2.014643,
+          "importance": 2.014643,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_me.com",
+          "base_feature": "R_emaildomain",
+          "coefficient": -1.999988,
+          "importance": 1.999988,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__R_emaildomain_outlook.com",
+          "base_feature": "R_emaildomain",
+          "coefficient": 1.89202,
+          "importance": 1.89202,
+          "direction": "risk_up"
+        },
+        {
+          "feature": "cat__R_emaildomain_gmail",
+          "base_feature": "R_emaildomain",
+          "coefficient": -1.845077,
+          "importance": 1.845077,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__P_emaildomain_web.de",
+          "base_feature": "P_emaildomain",
+          "coefficient": -1.844329,
+          "importance": 1.844329,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__P_emaildomain_windstream.net",
+          "base_feature": "P_emaildomain",
+          "coefficient": -1.838404,
+          "importance": 1.838404,
+          "direction": "risk_down"
+        },
+        {
+          "feature": "cat__P_emaildomain_netzero.com",
+          "base_feature": "P_emaildomain",
+          "coefficient": -1.825141,
+          "importance": 1.825141,
+          "direction": "risk_down"
+        }
+      ],
+      "grouped_top": [
+        {
+          "feature": "R_emaildomain",
+          "importance": 65.441344,
+          "max_abs_coefficient": 5.250067,
+          "encoded_count": 50
+        },
+        {
+          "feature": "P_emaildomain",
+          "importance": 46.168117,
+          "max_abs_coefficient": 2.434697,
+          "encoded_count": 50
+        },
+        {
+          "feature": "C14",
+          "importance": 8.628523,
+          "max_abs_coefficient": 8.628523,
+          "encoded_count": 1
+        },
+        {
+          "feature": "C11",
+          "importance": 6.37551,
+          "max_abs_coefficient": 6.37551,
+          "encoded_count": 1
+        },
+        {
+          "feature": "C4",
+          "importance": 3.929356,
+          "max_abs_coefficient": 3.929356,
+          "encoded_count": 1
+        },
+        {
+          "feature": "ProductCD",
+          "importance": 2.957177,
+          "max_abs_coefficient": 1.209751,
+          "encoded_count": 5
+        },
+        {
+          "feature": "M5",
+          "importance": 2.652879,
+          "max_abs_coefficient": 1.440497,
+          "encoded_count": 3
+        },
+        {
+          "feature": "C12",
+          "importance": 2.50108,
+          "max_abs_coefficient": 2.50108,
+          "encoded_count": 1
+        },
+        {
+          "feature": "card4",
+          "importance": 1.975305,
+          "max_abs_coefficient": 0.704948,
+          "encoded_count": 5
+        },
+        {
+          "feature": "card6",
+          "importance": 1.675908,
+          "max_abs_coefficient": 0.723896,
+          "encoded_count": 5
+        },
+        {
+          "feature": "C10",
+          "importance": 1.65685,
+          "max_abs_coefficient": 1.65685,
+          "encoded_count": 1
+        },
+        {
+          "feature": "C9",
+          "importance": 1.6319,
+          "max_abs_coefficient": 1.6319,
+          "encoded_count": 1
+        },
+        {
+          "feature": "C7",
+          "importance": 1.505756,
+          "max_abs_coefficient": 1.505756,
+          "encoded_count": 1
+        },
+        {
+          "feature": "C8",
+          "importance": 1.45795,
+          "max_abs_coefficient": 1.45795,
+          "encoded_count": 1
+        },
+        {
+          "feature": "C2",
+          "importance": 0.845381,
+          "max_abs_coefficient": 0.845381,
+          "encoded_count": 1
+        }
+      ]
+    }
+  }
+}

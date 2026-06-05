@@ -1,0 +1,5 @@
+# Install the local src/ package plus Python dependencies.
+# Works from a fresh venv on Windows, Linux, or macOS:
+#   python -m pip install -r requirements.txt
+-e .[dev]
+

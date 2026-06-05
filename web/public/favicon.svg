@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fraud analytics shield">
+  <rect width="64" height="64" rx="14" fill="#16181d"/>
+  <path d="M32 8 50 15v15c0 11.5-7.4 21.7-18 25.4C21.4 51.7 14 41.5 14 30V15l18-7Z" fill="#087f8c"/>
+  <path d="M32 14 44 18.7V30c0 8-4.8 15.1-12 18.4C24.8 45.1 20 38 20 30V18.7L32 14Z" fill="#f5f7fb"/>
+  <path d="M23 37h18" stroke="#16181d" stroke-width="4" stroke-linecap="round"/>
+  <path d="m24 34 6-8 5 5 6-10" fill="none" stroke="#cf4d3f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="41" cy="21" r="4" fill="#cf4d3f"/>
+</svg>

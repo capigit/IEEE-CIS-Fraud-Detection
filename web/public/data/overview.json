@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-06-02T11:58:37.489500+00:00",
+  "files": {
+    "train_transaction": {
+      "rows": 590540,
+      "columns": 394
+    },
+    "test_transaction": {
+      "rows": 506691,
+      "columns": 393
+    },
+    "train_identity": {
+      "rows": 144233,
+      "columns": 41
+    },
+    "test_identity": {
+      "rows": 141907,
+      "columns": 41
+    }
+  },
+  "target": {
+    "fraud_count": 20663,
+    "non_fraud_count": 569877,
+    "fraud_rate": 0.03499
+  },
+  "time": {
+    "train_dt_min": 86400,
+    "train_dt_max": 15811131,
+    "train_span_days": 182.0,
+    "test_dt_min": 18403224,
+    "test_dt_max": 34214345,
+    "test_span_days": 183.0,
+    "gap_days": 30.0
+  },
+  "identity": {
+    "train_coverage": 0.244239,
+    "test_coverage": 0.280066
+  },
+  "schema": {
+    "transaction_train_only": [
+      "isFraud"
+    ],
+    "transaction_test_only": [],
+    "transaction_groups": {
+      "card": 6,
+      "addr": 2,
+      "dist": 2,
+      "C": 14,
+      "D": 15,
+      "M": 9,
+      "V": 339
+    }
+  }
+}
