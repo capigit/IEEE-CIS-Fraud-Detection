@@ -178,19 +178,11 @@ Settings > Pages > Build and deployment > Source: GitHub Actions
 ```
 
 Le projet utilise `base: "./"` dans Vite et des routes par hash. Il fonctionne
-donc sous :
-
-```txt
-https://capigit.github.io/IEEE-CIS-Fraud-Detection/
-```
+donc sous [capigit.github.io/IEEE-CIS-Fraud-Detection](https://capigit.github.io/IEEE-CIS-Fraud-Detection/).
 
 ## Notes De Donnees
 
-- Le detail de l'organisation du dossier `data/` est documente dans
-  [data/README.md](data/README.md).
-- `data/raw/`, `data/processed/`, `data/dashboard/`, `web/dist/` et les
-  environnements virtuels sont ignores par git.
-- `web/public/data/*.json` est versionne volontairement : ce sont les agregats
-  servis par GitHub Pages.
-- `.nojekyll` est inclus pour que GitHub Pages serve les assets statiques sans
-  transformation Jekyll.
+Le detail de l'organisation du dossier `data/` est documente dans
+[data/README.md](data/README.md). Les fichiers Kaggle bruts restent locaux :
+seuls les agregats JSON de `web/public/data/` sont versionnes pour alimenter le
+dashboard GitHub Pages.
