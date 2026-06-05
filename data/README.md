@@ -1,13 +1,20 @@
-# Data layout
+# Organisation des donnees
 
-Recommended local layout:
+Les donnees brutes proviennent de la competition Kaggle
+[IEEE-CIS Fraud Detection](https://www.kaggle.com/competitions/ieee-fraud-detection/data).
+
+Organisation locale recommandee :
 
 ```txt
 data/
-  raw/          # Kaggle CSV files, ignored by git
-  processed/    # Parquet or model artifacts
-  dashboard/    # Optional intermediate exports
+  raw/          # CSV Kaggle, ignores par git
+  processed/    # Parquet normalises ou artefacts intermediaires
+  dashboard/    # Exports JSON canoniques pour le dashboard
 ```
 
-The current scripts also support the existing CSV files at the project root.
-Use `--raw-dir .` in both cases.
+Les scripts acceptent aussi les CSV places directement a la racine du projet.
+Dans les deux cas, utiliser `--raw-dir .`.
+
+Les donnees brutes et les exports intermediaires restent locaux. Seuls les
+agregats publics copies dans `web/public/data/` sont versionnes pour GitHub
+Pages.

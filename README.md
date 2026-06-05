@@ -186,6 +186,8 @@ https://capigit.github.io/IEEE-CIS-Fraud-Detection/
 
 ## Notes De Donnees
 
+- Le detail de l'organisation du dossier `data/` est documente dans
+  [data/README.md](data/README.md).
 - `data/raw/`, `data/processed/`, `data/dashboard/`, `web/dist/` et les
   environnements virtuels sont ignores par git.
 - `web/public/data/*.json` est versionne volontairement : ce sont les agregats
