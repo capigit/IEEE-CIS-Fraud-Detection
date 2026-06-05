@@ -644,7 +644,7 @@ main {
   z-index: 1;
   display: grid;
   gap: 10px;
-  width: min(920px, 100%);
+  width: 100%;
 }
 
 .method-hero span,
@@ -658,7 +658,8 @@ main {
 .method-hero h2 {
   margin: 0;
   color: #17265a;
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  width: min(1120px, 100%);
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
   line-height: 1.15;
 }
 
