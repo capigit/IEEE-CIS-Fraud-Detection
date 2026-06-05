@@ -1,6 +1,6 @@
 # IEEE-CIS Fraud Detection Dashboard
 
-Pipeline Python modulaire et dashboard statique interactif pour analyser le
+Pipeline Python modulaire et dashboard statique deployable sur GitHub Pages pour analyser le
 dataset IEEE-CIS Fraud Detection.
 
 ## Stack
