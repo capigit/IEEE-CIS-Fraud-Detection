@@ -1,4 +1,4 @@
-# IEEE-CIS Fraud Detection Dashboard
+<h1 align="center">IEEE-CIS Fraud Detection Dashboard</h1>
 
 [![Deploy GitHub Pages](https://github.com/capigit/IEEE-CIS-Fraud-Detection/actions/workflows/deploy-gh-pages.yml/badge.svg)](https://github.com/capigit/IEEE-CIS-Fraud-Detection/actions/workflows/deploy-gh-pages.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-167a4a)](https://capigit.github.io/IEEE-CIS-Fraud-Detection/)
@@ -13,7 +13,9 @@ sur GitHub Pages.
 **Dashboard en ligne :**
 [capigit.github.io/IEEE-CIS-Fraud-Detection](https://capigit.github.io/IEEE-CIS-Fraud-Detection/)
 
-![Apercu du dashboard](reports/screenshots/decisions-final.png)
+<p align="center">
+  <img src="global.png" alt="Apercu du dashboard IEEE-CIS Fraud Detection" width="920">
+</p>
 
 ## Ce Que Montre Le Dashboard
 
