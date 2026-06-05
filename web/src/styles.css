@@ -334,20 +334,26 @@ main {
 }
 
 .decision-hero {
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(320px, 1.35fr) minmax(360px, 1fr);
   gap: 20px;
   align-items: stretch;
   padding: 22px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(207, 77, 63, 0.24);
   border-left: 5px solid var(--coral);
   border-radius: 8px;
-  background: var(--surface);
+  background:
+    linear-gradient(135deg, rgba(207, 77, 63, 0.13), rgba(8, 127, 140, 0.08) 48%, #ffffff 82%),
+    var(--surface);
   box-shadow: var(--shadow);
 }
 
 .decision-hero > div,
 .decision-card {
+  position: relative;
+  z-index: 1;
   min-width: 0;
 }
 
@@ -360,7 +366,7 @@ main {
 .decision-hero span,
 .decision-card span,
 .decision-proof span {
-  color: var(--muted);
+  color: #8f372f;
   font-size: 0.78rem;
   font-weight: 850;
   text-transform: uppercase;
@@ -368,6 +374,7 @@ main {
 
 .decision-hero h2 {
   margin: 0;
+  color: #311512;
   font-size: clamp(1.35rem, 3vw, 2rem);
   line-height: 1.15;
   overflow-wrap: anywhere;
@@ -396,9 +403,22 @@ main {
   gap: 5px;
   min-height: 98px;
   padding: 13px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(207, 77, 63, 0.18);
   border-radius: 8px;
-  background: var(--surface-strong);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 24px rgba(31, 37, 51, 0.06);
+}
+
+.decision-proof:nth-child(2) {
+  border-color: rgba(8, 127, 140, 0.24);
+}
+
+.decision-proof:nth-child(3) {
+  border-color: rgba(49, 87, 183, 0.24);
+}
+
+.decision-proof:nth-child(4) {
+  border-color: rgba(184, 130, 5, 0.28);
 }
 
 .decision-proof strong {
@@ -424,9 +444,25 @@ main {
   min-height: 245px;
   padding: 16px;
   border: 1px solid var(--line);
+  border-top: 4px solid var(--coral);
   border-radius: 8px;
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(207, 77, 63, 0.08), #ffffff 42%);
   box-shadow: var(--shadow);
+}
+
+.decision-card:nth-child(2) {
+  border-top-color: var(--teal);
+  background: linear-gradient(180deg, rgba(8, 127, 140, 0.09), #ffffff 42%);
+}
+
+.decision-card:nth-child(3) {
+  border-top-color: var(--amber);
+  background: linear-gradient(180deg, rgba(184, 130, 5, 0.1), #ffffff 42%);
+}
+
+.decision-card:nth-child(4) {
+  border-top-color: var(--blue);
+  background: linear-gradient(180deg, rgba(49, 87, 183, 0.09), #ffffff 42%);
 }
 
 .decision-card-top {
@@ -442,12 +478,25 @@ main {
   height: 28px;
   place-items: center;
   border-radius: 999px;
-  background: #1d222d;
+  background: var(--coral);
   color: #ffffff;
   font-size: 0.78rem;
 }
 
+.decision-card:nth-child(2) .decision-card-top b {
+  background: var(--teal);
+}
+
+.decision-card:nth-child(3) .decision-card-top b {
+  background: var(--amber);
+}
+
+.decision-card:nth-child(4) .decision-card-top b {
+  background: var(--blue);
+}
+
 .decision-card strong {
+  color: #291d1b;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   line-height: 1;
 }
@@ -477,10 +526,10 @@ main {
   min-height: 26px;
   align-items: center;
   padding: 0 9px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(207, 77, 63, 0.18);
   border-radius: 999px;
-  background: var(--surface-strong);
-  color: var(--muted);
+  background: rgba(207, 77, 63, 0.08);
+  color: #793129;
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -494,9 +543,9 @@ main {
 
 .recommendation-panel {
   padding: 18px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(8, 127, 140, 0.2);
   border-radius: 8px;
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(8, 127, 140, 0.08), #ffffff 34%);
   box-shadow: var(--shadow);
 }
 
@@ -531,9 +580,9 @@ main {
   position: relative;
   min-height: 116px;
   padding: 42px 14px 14px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(8, 127, 140, 0.16);
   border-radius: 8px;
-  background: var(--surface-strong);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .recommendation-panel li::before {
@@ -545,7 +594,7 @@ main {
   height: 24px;
   place-items: center;
   border-radius: 50%;
-  background: #1d222d;
+  background: var(--teal);
   color: #ffffff;
   counter-increment: action;
   content: counter(action);
@@ -558,9 +607,9 @@ main {
   align-content: start;
   gap: 10px;
   padding: 18px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(184, 130, 5, 0.28);
   border-radius: 8px;
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(184, 130, 5, 0.12), #ffffff 38%);
   box-shadow: var(--shadow);
 }
 
@@ -578,15 +627,21 @@ main {
 }
 
 .method-hero {
+  position: relative;
+  overflow: hidden;
   padding: 22px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(49, 87, 183, 0.24);
   border-left: 5px solid var(--blue);
   border-radius: 8px;
-  background: var(--surface);
+  background:
+    linear-gradient(135deg, rgba(49, 87, 183, 0.14), rgba(22, 122, 74, 0.08) 54%, #ffffff 84%),
+    var(--surface);
   box-shadow: var(--shadow);
 }
 
 .method-hero > div {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: 10px;
   width: min(920px, 100%);
@@ -594,7 +649,7 @@ main {
 
 .method-hero span,
 .method-card span {
-  color: var(--muted);
+  color: #264494;
   font-size: 0.78rem;
   font-weight: 850;
   text-transform: uppercase;
@@ -602,6 +657,7 @@ main {
 
 .method-hero h2 {
   margin: 0;
+  color: #17265a;
   font-size: clamp(1.35rem, 3vw, 2rem);
   line-height: 1.15;
 }
@@ -632,9 +688,25 @@ main {
   min-height: 166px;
   padding: 16px;
   border: 1px solid var(--line);
+  border-top: 4px solid var(--blue);
   border-radius: 8px;
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(49, 87, 183, 0.08), #ffffff 42%);
   box-shadow: var(--shadow);
+}
+
+.method-card:nth-child(2) {
+  border-top-color: var(--green);
+  background: linear-gradient(180deg, rgba(22, 122, 74, 0.09), #ffffff 42%);
+}
+
+.method-card:nth-child(3) {
+  border-top-color: var(--coral);
+  background: linear-gradient(180deg, rgba(207, 77, 63, 0.08), #ffffff 42%);
+}
+
+.method-card:nth-child(4) {
+  border-top-color: var(--amber);
+  background: linear-gradient(180deg, rgba(184, 130, 5, 0.1), #ffffff 42%);
 }
 
 .method-card h3 {
